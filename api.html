@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+                
+</head>
+<body>
+    <!-- Api has four methods
+     1. Get 
+     2. Post
+     3. put
+     4. Delete 
+     
+     Get Request can be seen on URL
+     Post can't be seen on URL
+
+     -->
+
+       <div class="container">
+        <div class="user-bar">
+                <h1>Users</h1>
+                <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+                <input type="search" id="search-bar" placeholder="Search users">
+          <div class="status">
+            Status: <span class="all">ALL <i class="fa-solid fa-chevron-down fa-sm"></i></span>
+          </div>
+          <div class="signup">
+            Signed up: <span class="all">ALL <i class="fa-solid fa-chevron-down fa-sm"></i></span>
+          </div>
+        </div>
+
+        <table>
+            <tr class="table-head">
+                <th>ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>BIRTH DATE</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>WEBSITE</th>
+            </tr>
+
+           </table>
+
+           <p id="error"></p>
+
+           <div class="id-card" id="id-card">
+            <div class="upper-side">
+              <div class="hole"></div>
+              <h3 id="company"></h3>
+            </div>
+            <div class="img">
+              <img src="istockphoto-1337144146-612x612-removebg-preview.png" alt="">
+            </div>
+            <div class="lower-side">
+              <h3 id="name"></h3>
+              <h4 id="bs-name"></h4>
+              <p id="id-no"></p>
+              <p id="phone"></p>
+              <p id="email"></p>
+            </div>
+       </div>
+      </div>
+</body>
+<script src="api.js"></script>
+</html>
